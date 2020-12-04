@@ -1,21 +1,17 @@
 import './App.css';
+import React from 'react';
+
+import Homepage from './components/Home.jsx'
+import TopAppbar from "./components/Topappbar";
+
+//import Album from './components/Album'
 
 function App() {
   return (
     <div className="App">
+      <TopAppbar />
       <header className="App-header">
-        <img src="images/SnowballSH.png" className="App-logo" alt="SnowballSH" />
-        <p>
-          Hi there, this is SnowballSH!
-        </p>
-        <a
-          className="App-link"
-          href="https://github.com/SnowballSH"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View my projects on Github!
-        </a>
+        <Homepage/>
       </header>
     </div>
   );
