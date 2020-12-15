@@ -1,5 +1,6 @@
 import React from 'react';
 import {Button} from "@material-ui/core";
+import Project from "./project";
 
 export default function Homepage() {
   return (
@@ -23,29 +24,21 @@ export default function Homepage() {
         </Button>
 
         <br/>
+        <br/>
         <p>
           These are some of the web applications I made:
         </p>
 
-        <a
-          target="_blank"
-          href="http://snowballsh.me/JumpingGamePhaser/"
-          rel="noopener noreferrer"
-        >
-          <div className="wrapper">
-            <img src="https://i.imgur.com/Y9BunBO.png" alt="Jumping Game" className="project"/>
-          </div>
-        </a>
+        <Project url="http://snowballsh.me/JumpingGamePhaser/"
+                 img="https://i.imgur.com/Y9BunBO.png"
+                 alt="Jumping Game"
+        />
 
-        <a
-          target="_blank"
-          href="https://repl.it/@SnowballSH/SimplePokemonGameCLI"
-          rel="noopener noreferrer"
-        >
-          <div className="wrapper">
-            <img src="https://i.imgur.com/ZuzPNTv.png" alt="Pokemon Game" className="project"/>
-          </div>
-        </a>
+        <Project url="https://repl.it/@SnowballSH/SimplePokemonGameCLI"
+                 img="https://i.imgur.com/ZuzPNTv.png"
+                 alt="Pokemon Game"
+        />
+
       </div>
     </div>
   );
