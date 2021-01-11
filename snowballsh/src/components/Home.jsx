@@ -46,6 +46,12 @@ export default function Homepage() {
           img="https://miro.medium.com/max/400/1*WjOx8btqYb5L1fIM_9cWnw.jpeg"
           alt="HumanScript"
         />
+
+        <Project
+          url="https://probox.vercel.app/"
+          img="https://assets.vercel.com/image/upload/q_auto/front/assets/design/white-nextjs.png"
+          alt="Probox"
+        />
       </div>
     </div>
   );
