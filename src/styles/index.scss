@@ -12,16 +12,18 @@ h1 {
   font-family: $font-a, cursive;
 
   @media (min-width: $phone) {
-    font-size: 3rem;
+    font-size: 4.5rem;
   }
 
   @media (min-width: $tablet) {
-    font-size: 5rem;
+    font-size: 6.5rem;
   }
 
   @media (min-width: $desktop) {
-    font-size: 7.5rem;
+    font-size: 8rem;
   }
+
+  text-shadow: 4px 4px 6px #505050;
 }
 
 h2 {
@@ -29,11 +31,11 @@ h2 {
   font-family: $font-a, cursive;
 
   @media (min-width: $phone) {
-    font-size: 2rem;
+    font-size: 3.5rem;
   }
 
   @media (min-width: $tablet) {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 
   @media (min-width: $desktop) {
