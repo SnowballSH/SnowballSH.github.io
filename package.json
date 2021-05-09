@@ -6,14 +6,19 @@
   "author": "SnowballSH <derek070211@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "css-loader": "^5.2.4",
+    "sass": "^1.32.12",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
     "vue-loader": "^15.9.6",
     "vue-template-compiler": "^2.6.12",
     "webpack": "^5.36.2",
     "webpack-cli": "^4.7.0"
   },
   "dependencies": {
+    "animejs": "^3.2.1",
     "lodash": "^4.17.21",
-    "vue": "^3.0.11"
+    "vue": "^2.6.12"
   },
   "scripts": {
     "watch": "webpack --watch",

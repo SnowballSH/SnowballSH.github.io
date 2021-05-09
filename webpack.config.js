@@ -7,14 +7,23 @@ module.exports = {
     filename: "main.js",
     path: path.resolve(__dirname, "docs"),
   },
-  mode: "production",
+  mode: "development",
   module: {
     rules: [
       {
         test: /\.vue$/,
         loader: "vue-loader",
       },
+      {
+        test: /\.s[ac]ss$/,
+        use: ["style-loader", "css-loader", "sass-loader"],
+      },
     ],
   },
   plugins: [new VueLoaderPlugin()],
+  resolve: {
+    alias: {
+      vue: "vue/dist/vue.js",
+    },
+  },
 };

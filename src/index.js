@@ -1,12 +1,12 @@
 import _ from "lodash";
 
-function component() {
-  const element = document.createElement("div");
+import Vue from "vue";
+import App from "./home.vue";
+import "./styles/index.scss";
+import "./animation";
 
-  // Lodash, currently included via a script, is required for this line to work
-  element.innerHTML = _.join(["Hello", "webpack!!!!!"], " ");
-
-  return element;
-}
-
-document.body.appendChild(component());
+new Vue({
+  el: "#home",
+  template: `<App/>`,
+  components: { App },
+});
