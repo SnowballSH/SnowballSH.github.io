@@ -1,0 +1,22 @@
+{
+  "name": "snowballsh.me",
+  "version": "1.0.0",
+  "private": true,
+  "repository": "https://github.com/SnowballSH/SnowballSH.github.io",
+  "author": "SnowballSH <derek070211@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "vue-loader": "^15.9.6",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.7.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "vue": "^3.0.11"
+  },
+  "scripts": {
+    "watch": "webpack --watch",
+    "build": "webpack"
+  }
+}
