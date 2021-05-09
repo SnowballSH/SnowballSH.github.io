@@ -15,6 +15,8 @@
       <br v-for="index in 4" :key="index" />
 
       <ft txt="SnowballSH" />
+
+      <and />
     </div>
   </div>
 </template>
@@ -22,11 +24,13 @@
 <script>
 import ft from "./components/ft.vue";
 import listrec from "./components/listrec.vue";
+import and from "./components/and.vue";
 
 export default {
   components: {
     ft,
     listrec,
+    and,
   },
 };
 </script>
