@@ -4,9 +4,9 @@ import "./styles/index.scss";
 import "./animation";
 
 import vuetify from "./plugins/vuetify";
+Vue.use(vuetify);
 
 new Vue({
-  vuetify,
   el: "#home",
   template: `<App/>`,
   components: { App },
