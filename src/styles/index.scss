@@ -1,13 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
 
 $font-a: "Itim";
+$font-weight: 400;
+
+h1 {
+  font-weight: $font-weight;
+  font-family: $font-a, cursive;
+  font-size: 8rem;
+}
 
 .ft {
-  font-weight: 400;
-  font-size: 7rem;
-  font-family: $font-a, cursive;
+  margin-top: 10rem;
+}
+
+.listrec {
+  position: relative;
+
+  .letters {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0rem;
+    right: 0;
+    opacity: 0;
+  }
 }
 
 .centered {
   text-align: center;
+}
+
+body {
+  overflow: hidden;
 }

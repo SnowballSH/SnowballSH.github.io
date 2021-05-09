@@ -1,5 +1,3 @@
-import _ from "lodash";
-
 import Vue from "vue";
 import App from "./home.vue";
 import "./styles/index.scss";
