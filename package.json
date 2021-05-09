@@ -6,7 +6,11 @@
   "author": "SnowballSH <derek070211@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.1",
+    "babel-loader": "^8.2.2",
     "css-loader": "^5.2.4",
+    "deepmerge": "^4.2.2",
     "sass": "^1.32.12",
     "sass-loader": "^11.0.1",
     "style-loader": "^2.0.0",
@@ -17,7 +21,8 @@
   },
   "dependencies": {
     "animejs": "^3.2.1",
-    "vue": "^2.6.12"
+    "vue": "^2.6.12",
+    "vuetify": "^2.4.11"
   },
   "scripts": {
     "watch": "webpack --watch",

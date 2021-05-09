@@ -1,7 +1,16 @@
 <template>
   <div class="centered">
-    <listrec />
-    <br />
+    <listrec
+      v-bind:items="[
+        'EDM',
+        'Backend Dev',
+        'System Programming',
+        'Frontend',
+        'Percussion',
+        'AI',
+      ]"
+    />
+    <br v-for="index in 4" :key="index" />
     <ft txt="SnowballSH" />
   </div>
 </template>

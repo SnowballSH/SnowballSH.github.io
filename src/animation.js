@@ -11,7 +11,7 @@ function listrec() {
 
   let animation = anime.timeline({ loop: true });
 
-  for (let i = 1; i < 5; i++) {
+  for (let i = 1; i < 7; i++) {
     animation = animation
       .add({
         targets: ".listrec .letters-" + i,
@@ -28,13 +28,6 @@ function listrec() {
         delay: ml4.delay,
       });
   }
-
-  animation.add({
-    targets: ".listrec",
-    opacity: 0,
-    duration: 500,
-    delay: 500,
-  });
 }
 
 function ft() {
