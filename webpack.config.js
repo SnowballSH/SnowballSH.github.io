@@ -2,7 +2,9 @@ const path = require("path");
 const { VueLoaderPlugin } = require("vue-loader");
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: {
+    index: "./src/index.js",
+  },
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "docs"),
@@ -15,12 +17,12 @@ module.exports = {
         loader: "vue-loader",
       },
       {
-        test: /\.s[ac]ss$/,
-        use: ["vue-style-loader", "style-loader", "css-loader", "sass-loader"],
+        test: /\.css$/,
+        use: ["vue-style-loader", "style-loader", "css-loader"],
       },
       {
-        test: /\.css$/,
-        use: ["css-loader"],
+        test: /\.s[ac]ss$/,
+        use: ["vue-style-loader", "style-loader", "css-loader", "sass-loader"],
       },
       {
         test: /\.m?js$/,
@@ -37,7 +39,7 @@ module.exports = {
   plugins: [new VueLoaderPlugin()],
   resolve: {
     alias: {
-      vue: "vue/dist/vue.js",
+      vue: "vue/dist/vue.min.js",
     },
   },
 };

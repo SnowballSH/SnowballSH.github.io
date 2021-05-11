@@ -79,15 +79,15 @@ function and() {
     });
 }
 
-function ft() {
-  const textWrapper = document.querySelector(".ft");
+function ft(id) {
+  const textWrapper = document.querySelector(`.ft#${id}`);
   textWrapper.innerHTML = textWrapper.textContent.replace(
     /\S/g,
     "<span class='letter'>$&</span>"
   );
 
   anime.timeline({ loop: false }).add({
-    targets: ".ft .letter",
+    targets: `.ft#${id} .letter`,
     opacity: [0, 1],
     easing: "easeInOutQuad",
     duration: 2250,
@@ -96,7 +96,7 @@ function ft() {
 }
 
 window.onload = () => {
-  ft();
+  ft("ft1");
   listrec();
   and();
 
@@ -104,3 +104,24 @@ window.onload = () => {
     console.log("callback - particles.js config loaded");
   });
 };
+
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 ||
+    rect.left >= 0 ||
+    rect.bottom <=
+      (window.innerHeight || document.documentElement.clientHeight) ||
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+let has_shown = false;
+
+document.addEventListener("scroll", function(_) {
+  let e = document.getElementById("ft2");
+  if (!has_shown && isInViewport(e)) {
+    has_shown = true;
+    ft("ft2");
+  }
+});
