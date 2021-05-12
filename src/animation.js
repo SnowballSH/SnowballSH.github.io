@@ -79,7 +79,7 @@ function and() {
     });
 }
 
-function ft(id) {
+function ft(id, duration = 2000, delay = 200) {
   const textWrapper = document.querySelector(`.ft#${id}`);
   textWrapper.innerHTML = textWrapper.textContent.replace(
     /\S/g,
@@ -90,8 +90,8 @@ function ft(id) {
     targets: `.ft#${id} .letter`,
     opacity: [0, 1],
     easing: "easeInOutQuad",
-    duration: 2250,
-    delay: (_, i) => 200 * (i + 1),
+    duration: duration,
+    delay: (_, i) => delay * (i + 1),
   });
 }
 
@@ -122,6 +122,6 @@ document.addEventListener("scroll", function(_) {
   let e = document.getElementById("ft2");
   if (!has_shown && isInViewport(e)) {
     has_shown = true;
-    ft("ft2");
+    ft("ft2", 1000, 60);
   }
 });

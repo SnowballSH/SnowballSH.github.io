@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 
-$font-a: "Itim";
-$font-b: "Josefin Sans";
+$font-a: "Itim", cursive;
+$font-b: "Josefin Sans", sans-serif;
+$font-c: "Source Sans Pro", sans-serif;
 $font-weight: 400;
 
 $phone: 640px;
@@ -11,7 +13,7 @@ $desktop: 1024px;
 
 h1 {
   font-weight: $font-weight;
-  font-family: $font-a, cursive;
+  font-family: $font-a;
 
   font-size: 3rem;
 
@@ -30,7 +32,7 @@ h1 {
 
 h2 {
   font-weight: $font-weight;
-  font-family: $font-a, cursive;
+  font-family: $font-a;
 
   font-size: 2.4rem;
 
@@ -48,8 +50,7 @@ h2 {
 }
 
 h3 {
-  font-weight: $font-weight * 0.5;
-  font-family: $font-b, sans-serif;
+  font-weight: $font-weight * 0.6;
 
   font-size: 1.6rem;
 
@@ -64,6 +65,26 @@ h3 {
   @media (min-width: $desktop) {
     font-size: 5rem;
   }
+}
+
+h5 {
+  font-weight: $font-weight * 0.6;
+
+  font-size: 1.4rem;
+
+  @media (min-width: $phone) {
+    font-size: 1.4rem;
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 1.5rem;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 1.6rem;
+  }
+
+  margin-top: 2px;
 }
 
 .listrec {
@@ -81,6 +102,8 @@ h3 {
 }
 
 .and {
+  font-family: $font-b;
+
   position: relative;
   color: #5ac7af;
   margin-top: -1.1rem;
@@ -119,17 +142,57 @@ h3 {
 }
 
 #ft1 {
+  font-family: $font-a;
   color: #fbc191;
-  text-shadow: 4px 4px 6px #696969;
+  text-shadow: 0.3rem 0.3rem 0.5rem #696969;
 }
 
 #ft2 {
-  color: #91bafb;
-  text-shadow: 4px 4px 6px #696969;
+  padding-top: 3rem;
+  font-family: $font-c;
+  color: #ffe08b;
+  text-shadow: 0.1rem 0.1rem 0.3rem #9b9b9b;
 }
 
 .centered {
   text-align: center;
+}
+
+.card {
+  cursor: pointer;
+
+  flex-grow: 1;
+  flex-shrink: 0;
+  width: 15rem;
+  height: 16rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+
+  font-family: $font-b;
+
+  background: linear-gradient(13deg, #fff7fd 14%, #f5fffa 73%);
+  background: -moz-linear-gradient(13deg, #fff7fd 14%, #f5fffa 73%);
+  background: -webkit-linear-gradient(13deg, #fff7fd 14%, #f5fffa 73%);
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 6px 6px 15px #e8e8e8;
+}
+
+.card-inner {
+  .header {
+    font-weight: 400;
+  }
+
+  .content {
+    font-weight: 100;
+  }
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
 }
 
 body {
@@ -147,13 +210,13 @@ body {
   z-index: -1;
   left: 0;
   right: 0;
-  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 #page-2 {
   margin-top: 0;
-  width: 100%;
-  height: 100%;
+  width: 150%;
+  height: 150%;
   background: #e0fffb;
   background: linear-gradient(150deg, #e0fffb 18%, #d4fcd2 77%);
   background: -moz-linear-gradient(150deg, #e0fffb 18%, #d4fcd2 77%);
