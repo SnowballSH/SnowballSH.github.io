@@ -33,8 +33,20 @@
     </div>
 
     <div class="cards">
-      <card header="Github" URL="https://github.com/SnowballSH" content="View my github profile where I post my coding projects!" />
-      <card header="YouTube" URL="https://youtube.com/c/SnowballSH" content="View my YouTube channel where I post my music!"/>
+      <card
+        header="Github"
+        URL="https://github.com/SnowballSH"
+        content="View my github profile where I post my coding projects!"
+        image="assets/gh32.png"
+        imgtxt="github.com/SnowballSH"
+      />
+      <card
+        header="YouTube"
+        URL="https://youtube.com/c/SnowballSH"
+        content="View my YouTube channel where I post my orginal and remix music!"
+        image="assets/yt32.png"
+        imgtxt="youtube.com/c/SnowballSH"
+      />
     </div>
   </div>
 </template>

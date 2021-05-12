@@ -122,6 +122,6 @@ document.addEventListener("scroll", function(_) {
   let e = document.getElementById("ft2");
   if (!has_shown && isInViewport(e)) {
     has_shown = true;
-    ft("ft2", 1000, 60);
+    ft("ft2", 1000, 50);
   }
 });
