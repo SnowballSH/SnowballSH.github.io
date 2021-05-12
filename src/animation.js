@@ -9,32 +9,32 @@ function listrec() {
   config.durationOut = 600;
   config.delay = 500;
 
-  let animation = anime.timeline({ loop: true });
-
-  animation.add({
+  anime({
     targets: ".listrec",
     opacity: config.durationIn,
     duration: 700,
     delay: 700,
+    complete: (_) => {
+      let animation = anime.timeline({ loop: true });
+      for (let i = 1; i < 7; i++) {
+        animation = animation
+          .add({
+            targets: ".listrec .letters-" + i,
+            opacity: config.opacityIn,
+            scale: config.scaleIn,
+            duration: config.durationIn,
+          })
+          .add({
+            targets: ".listrec .letters-" + i,
+            opacity: 0,
+            scale: config.scaleOut,
+            duration: config.durationOut,
+            easing: "easeInExpo",
+            delay: config.delay,
+          });
+      }
+    },
   });
-
-  for (let i = 1; i < 7; i++) {
-    animation = animation
-      .add({
-        targets: ".listrec .letters-" + i,
-        opacity: config.opacityIn,
-        scale: config.scaleIn,
-        duration: config.durationIn,
-      })
-      .add({
-        targets: ".listrec .letters-" + i,
-        opacity: 0,
-        scale: config.scaleOut,
-        duration: config.durationOut,
-        easing: "easeInExpo",
-        delay: config.delay,
-      });
-  }
 }
 
 function and() {
