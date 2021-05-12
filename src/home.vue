@@ -32,8 +32,10 @@
       />
     </div>
 
+    <h4 class="h3-text">Places to see my projects:</h4>
     <div class="cards">
       <card
+        id="gh"
         header="Github"
         URL="https://github.com/SnowballSH"
         content="View my github profile where I post my coding projects!"
@@ -41,6 +43,7 @@
         imgtxt="github.com/SnowballSH"
       />
       <card
+        id="yt"
         header="YouTube"
         URL="https://youtube.com/c/SnowballSH"
         content="View my YouTube channel where I post my orginal and remix music!"

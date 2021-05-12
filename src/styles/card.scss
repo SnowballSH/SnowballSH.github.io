@@ -1,0 +1,110 @@
+$card-color-1: white;
+$card-color-2: rgb(189, 46, 46);
+$card-color-3: rgb(122, 173, 88);
+
+$font-b: "Josefin Sans", sans-serif;
+
+.card {
+  position: relative;
+  cursor: pointer;
+
+  color: black;
+
+  flex-grow: 1;
+  flex-shrink: 0;
+  width: 15rem;
+  height: 16rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+
+  font-family: $font-b;
+
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 5px 5px 7px #e8e8e8;
+}
+
+#yt {
+  background: linear-gradient(
+    $card-color-1,
+    $card-color-1 50%,
+    $card-color-2 50%,
+    $card-color-2
+  );
+  background: -moz-linear-gradient(
+    $card-color-1,
+    $card-color-1 50%,
+    $card-color-2 50%,
+    $card-color-2
+  );
+  background: -webkit-linear-gradient(
+    $card-color-1,
+    $card-color-1 50%,
+    $card-color-2 50%,
+    $card-color-2
+  );
+
+  transition: all 0.2s ease;
+
+  background-size: 100% 200%;
+
+  &:hover {
+    background-position: 100% 100%;
+    animation: up-bump 0.4s ease;
+    color: white;
+  }
+}
+
+#gh {
+  background: linear-gradient(
+    $card-color-1,
+    $card-color-1 50%,
+    $card-color-3 50%,
+    $card-color-3
+  );
+  background: -moz-linear-gradient(
+    $card-color-1,
+    $card-color-1 50%,
+    $card-color-3 50%,
+    $card-color-3
+  );
+  background: -webkit-linear-gradient(
+    $card-color-1,
+    $card-color-1 50%,
+    $card-color-3 50%,
+    $card-color-3
+  );
+
+  transition: all 0.2s ease;
+
+  background-size: 100% 200%;
+
+  &:hover {
+    background-position: 100% 100%;
+    animation: up-bump 0.4s ease;
+    color: white;
+  }
+}
+
+.card-inner {
+  .header {
+    font-weight: 400;
+  }
+
+  .content {
+    font-weight: 100;
+  }
+}
+
+.card-footer {
+  position: absolute;
+  bottom: 0rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  align-items: center;
+}
