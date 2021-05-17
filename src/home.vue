@@ -24,7 +24,7 @@
     <!--Pages-->
     <div id="page-2">
       <div class="centered">
-        <img src="assets/SnowballSH.png" />
+        <img src="assets/SnowballSH.png" width="20%" height="20%" />
         <ft
           txt="Hi! I am SnowballSH, a software developer and music producer."
           id="ft2"
@@ -97,7 +97,7 @@
     </div>
 
     <div id="footer">
-      <img src="assets/SnowballSH.png" />
+      <img src="assets/SnowballSH.png" width="20%" height="20%" />
       <h4 class="h3-text" style="padding: 0rem">SnowballSH</h4>
     </div>
   </div>
