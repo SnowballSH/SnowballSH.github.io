@@ -1,0 +1,38 @@
+.bar-container {
+  max-width: 100%;
+  border-radius: 0.8rem;
+  margin: 1.4rem;
+}
+
+.bar {
+  max-width: 100%;
+  height: 2.8rem;
+  text-align: right;
+  color: white;
+  display: flex;
+  padding: 1rem;
+
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  border-radius: 0 2.5rem 2.5rem 0;
+}
+
+.bar-text {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: large;
+  margin-right: 1rem;
+  margin-top: 0.9rem;
+  order: 2;
+}
+
+.bar-name {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  order: 1;
+
+  margin: 0;
+  padding: 0.4rem;
+  margin-top: 0.3rem;
+}

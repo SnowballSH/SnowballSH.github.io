@@ -108,6 +108,8 @@ h5 {
 .h3-text {
   font-family: $font-a;
   margin: 3rem;
+  margin-top: 0;
+  padding-top: 3.5rem;
 }
 
 .listrec {
@@ -176,6 +178,8 @@ h5 {
   font-family: $font-c;
   color: #ffe08b;
   text-shadow: 0.1rem 0.1rem 0.3rem #9b9b9b;
+  padding-bottom: 4rem;
+  margin-bottom: 0;
 }
 
 .centered {
@@ -201,18 +205,37 @@ body {
 }
 
 #page-2 {
-  margin-top: 0;
-  width: 150%;
-  height: 150%;
+  margin: 0;
   background: #e0fffb;
   background: linear-gradient(150deg, #e0fffb 18%, #d4fcd2 77%);
   background: -moz-linear-gradient(150deg, #e0fffb 18%, #d4fcd2 77%);
   background: -webkit-linear-gradient(150deg, #e0fffb 18%, #d4fcd2 77%);
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  right: 0;
+
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
+
+#page-3 {
+  margin: 0;
+  background: #ffe2e2;
+  background: linear-gradient(150deg, #fffde0 18%, #ffe2e2 77%);
+  background: -moz-linear-gradient(150deg, #fffde0 18%, #ffe2e2 77%);
+  background: -webkit-linear-gradient(150deg, #fffde0 18%, #ffe2e2 77%);
+
+  padding-top: 0;
+  padding-bottom: 4rem;
+}
+
+#page-4 {
+  margin: 0;
+  padding-bottom: 3rem;
+  background: #efe2ff;
+  background: linear-gradient(150deg, #efe2ff 18%, #e2efff 77%);
+  background: -moz-linear-gradient(150deg, #efe2ff 18%, #e2efff 77%);
+  background: -webkit-linear-gradient(150deg, #efe2ff 18%, #e2efff 77%);
+}
+
+html,
+body {
+  margin: 0;
 }

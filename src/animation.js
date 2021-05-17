@@ -79,19 +79,19 @@ function and() {
     });
 }
 
-function ft(id, duration = 2000, delay = 200) {
+function ft(id, duration = 2000, smallDelay = 200, delay = 400) {
   const textWrapper = document.querySelector(`.ft#${id}`);
   textWrapper.innerHTML = textWrapper.textContent.replace(
     /\S/g,
     "<span class='letter'>$&</span>"
   );
 
-  anime.timeline({ loop: false }).add({
+  anime.timeline({ loop: false, delay: delay }).add({
     targets: `.ft#${id} .letter`,
     opacity: [0, 1],
     easing: "easeInOutQuad",
     duration: duration,
-    delay: (_, i) => delay * (i + 1),
+    delay: (_, i) => smallDelay * (i + 1),
   });
 }
 
@@ -103,25 +103,60 @@ window.onload = () => {
   particlesJS.load("particles-js", "assets/particles.json", function() {
     console.log("callback - particles.js config loaded");
   });
+
+  loadAnimations();
 };
 
 function isInViewport(element) {
   const rect = element.getBoundingClientRect();
   return (
-    rect.top >= 0 ||
-    rect.left >= 0 ||
+    // rect.top >= 0
+    //&& rect.left >= 0
+
+    // &&
     rect.bottom <=
-      (window.innerHeight || document.documentElement.clientHeight) ||
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    (window.innerHeight || document.documentElement.clientHeight) +
+      element.offsetHeight
+
+    //&& rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 }
 
-let has_shown = false;
+let hasShowns = {};
 
-document.addEventListener("scroll", function(_) {
-  let e = document.getElementById("ft2");
-  if (!has_shown && isInViewport(e)) {
-    has_shown = true;
-    ft("ft2", 1000, 50);
-  }
-});
+function loadAnimations(_) {
+  (() => {
+    let e = document.getElementById("ft2");
+    if (!hasShowns.ft2 && isInViewport(e)) {
+      hasShowns.ft2 = true;
+      ft("ft2", 600, 50, 300);
+    }
+  })();
+
+  ["Python", "Rust", "Ruby", "Go", "TypeScript", "React"].map((x) => {
+    (() => {
+      let n = document.getElementById("bar-con");
+      if (!hasShowns[x] && isInViewport(n)) {
+        hasShowns[x] = true;
+        let e = document.getElementById(x);
+        let w = e.style.maxWidth;
+        anime({
+          targets: "#" + x,
+          maxWidth: [
+            window.innerWidth > 750
+              ? "25%"
+              : window.innerWidth > 600
+              ? "28%"
+              : "45%",
+            w,
+          ],
+          easing: "easeInOutQuad",
+          duration: 1600,
+          delay: 400,
+        });
+      }
+    })();
+  });
+}
+
+document.addEventListener("scroll", loadAnimations);
