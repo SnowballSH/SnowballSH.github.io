@@ -24,6 +24,7 @@
     <!--Pages-->
     <div id="page-2">
       <div class="centered">
+        <img src="assets/SnowballSH.png" />
         <ft
           txt="Hi! I am SnowballSH, a software developer and music producer."
           id="ft2"
@@ -65,6 +66,39 @@
         <bar name="Rust" color="#dea584" value="85" />
         <bar name="Go" color="#00ADD8" value="81" />
       </div>
+    </div>
+
+    <div id="page-5">
+      <h4 class="h3-text">My Most Popular Video:</h4>
+
+      <div style="margin-bottom: 0" class="yt-container">
+        <iframe
+          class="ytvid"
+          src="https://www.youtube.com/embed/3m6lHpmrZr0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <h4 class="h3-text">My Latest Original Release:</h4>
+
+      <div class="yt-container">
+        <iframe
+          class="ytvid"
+          src="https://www.youtube.com/embed/GkePtqJU5mk"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <div id="footer">
+      <img src="assets/SnowballSH.png" />
+      <h4 class="h3-text" style="padding: 0rem">SnowballSH</h4>
     </div>
   </div>
 </template>

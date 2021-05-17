@@ -174,11 +174,11 @@ h5 {
 }
 
 #ft2 {
-  padding-top: 3rem;
   font-family: $font-c;
   color: #ffe08b;
   text-shadow: 0.1rem 0.1rem 0.3rem #9b9b9b;
   padding-bottom: 4rem;
+  margin-top: 0.5rem;
   margin-bottom: 0;
 }
 
@@ -211,7 +211,7 @@ body {
   background: -moz-linear-gradient(150deg, #e0fffb 18%, #d4fcd2 77%);
   background: -webkit-linear-gradient(150deg, #e0fffb 18%, #d4fcd2 77%);
 
-  padding-top: 0;
+  padding-top: 3rem;
   padding-bottom: 1rem;
 }
 
@@ -235,7 +235,41 @@ body {
   background: -webkit-linear-gradient(150deg, #efe2ff 18%, #e2efff 77%);
 }
 
+#page-5 {
+  margin: 0;
+  padding-bottom: 3rem;
+  background: #e2fffe;
+  background: linear-gradient(150deg, #e2efff 18%, #e2fffe 77%);
+  background: -moz-linear-gradient(150deg, #e2efff 18%, #e2fffe 77%);
+  background: -webkit-linear-gradient(150deg, #e2efff 18%, #e2fffe 77%);
+}
+
+#footer {
+  margin: 0;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  background: #a8dfff;
+  text-align: center;
+}
+
 html,
 body {
   margin: 0;
+}
+
+.yt-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 35%;
+}
+
+.ytvid {
+  position: absolute;
+  top: 0;
+  left: 50% * 0.4;
+  bottom: 0;
+  right: 50% * 0.6;
+  width: 60%;
+  height: 100%;
 }
