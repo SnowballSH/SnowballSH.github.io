@@ -32,14 +32,16 @@ export function SHCont() {
 
 export function SVGAnimate() {
     const Gap = 0.24;
+    const Offset = 1700;
 
     let tl = anime.timeline();
 
     tl.add(
         {
             targets: ".svg-single",
-            translateY: ["-10em", "0em"],
-            delay: anime.stagger(30, {easing: 'easeOutQuad'})
+            translateY: ["-20em", "0em"],
+            delay: anime.stagger(30, {easing: 'easeOutQuad', start: 400}),
+            duration: Offset,
         }
     )
 
@@ -49,7 +51,7 @@ export function SVGAnimate() {
             translateX: `${-3 * Gap}em`,
             translateY: `${3 * Gap}em`,
             easing: 'easeInOutSine',
-        }, 1000
+        }, Offset
     )
 
     tl.add(
@@ -58,7 +60,7 @@ export function SVGAnimate() {
             translateX: `${-2 * Gap}em`,
             translateY: `${2 * Gap}em`,
             easing: 'easeInOutSine',
-        }, 1000
+        }, Offset
     )
 
     tl.add(
@@ -67,7 +69,7 @@ export function SVGAnimate() {
             translateX: `${-Gap}em`,
             translateY: `${Gap}em`,
             easing: 'easeInOutSine',
-        }, 1000
+        }, Offset
     )
 
     tl.add(
@@ -76,7 +78,7 @@ export function SVGAnimate() {
             translateX: `0em`,
             translateY: `0em`,
             easing: 'easeInOutSine',
-        }, 1000
+        }, Offset
     )
 
     tl.add(
@@ -85,7 +87,7 @@ export function SVGAnimate() {
             translateX: `${Gap}em`,
             translateY: `${-Gap}em`,
             easing: 'easeInOutSine',
-        }, 1000
+        }, Offset
     )
 
     tl.add(
@@ -94,6 +96,6 @@ export function SVGAnimate() {
             translateX: `${2 * Gap}em`,
             translateY: `${-2 * Gap}em`,
             easing: 'easeInOutSine',
-        }, 1000
+        }, Offset
     )
 }
