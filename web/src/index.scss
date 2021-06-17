@@ -1,3 +1,5 @@
+@import "styles/svg";
+
 html,
 body {
   padding: 0;
@@ -10,43 +12,4 @@ body {
 
 #app {
   text-align: center;
-}
-
-.svg-container {
-  font-size: 3vw;
-  padding: 1em;
-  position: relative;
-  height: 14em;
-  transform: translateY(0em) rotateX(10deg);
-
-  :nth-child(6) {
-    opacity: 0.05;
-  }
-
-  :nth-child(5) {
-    opacity: 0.1;
-  }
-
-  :nth-child(4) {
-    opacity: 0.3;
-  }
-
-  :nth-child(1) {
-    opacity: 0.5;
-  }
-
-  :nth-child(2) {
-    opacity: 0.7;
-  }
-
-  :nth-child(3) {
-    opacity: 1.0;
-  }
-}
-
-.svg-single {
-  // border: 2px solid cornflowerblue;
-  position: absolute;
-  top: calc(50% - 6em);
-  left: calc(50% - 7.5em);
 }
