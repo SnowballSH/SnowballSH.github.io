@@ -8,5 +8,8 @@ export default defineConfig({
     jsxFactory: 'h',
     jsxFragment: 'Fragment',
   },
+  build: {
+    outDir: "docs",
+  },
   plugins: [prefresh()]
 })

@@ -4,36 +4,41 @@ import anime from "animejs";
 
 const SHPATH = `
 m40 21c-17-7-6-22 5-14m-5 14c15 7-2 25-10 10m25-25v30m16-30v30m-16-16h16m-55 1c-17-7-6-22 5-14m-5 14c15 7-2 25-10 10
-`.trim().split("\n").join(" ");
+`;
 
 export function SH() {
     return (
         <svg viewBox="0 0 80 40" class={"svg-single"}
              width={"24em"} height={"12em"}
              xmlns="http://www.w3.org/2000/svg"
-        stroke-width={0.3}>
+             stroke-width={0.3}>
             <path stroke="hsl(197, 100%, 50%)" fill="transparent" d={SHPATH}/>
         </svg>
-    )
+    );
 }
 
 export function SHCont() {
     return (
-        <div class={"svg-container"}>
-            <SH/>
-            <SH/>
-            <SH/>
-            <SH/>
-            <SH/>
-            <SH/>
-            <h1 class="svg-text" id="snowball">
-                Snowball
-            </h1>
-            <h1 class="svg-text" id="sh">
-                SH
-            </h1>
+        <div>
+            <div class={"svg-container"}>
+                <SH/>
+                <SH/>
+                <SH/>
+                <SH/>
+                <SH/>
+                <SH/>
+                <h1 class="svg-text" id="snowball">
+                    Snowball
+                </h1>
+                <h1 class="svg-text" id="sh">
+                    SH
+                </h1>
+            </div>
+            <h4 class="what-i-do">
+                I write software, produce music, and more.
+            </h4>
         </div>
-    )
+    );
 }
 
 export function SVGAnimate() {
@@ -65,7 +70,7 @@ export function SVGAnimate() {
             easing: 'easeInOutSine',
             duration: Duration
         }, Offset
-    )
+    );
 
     tl.add(
         {
@@ -76,7 +81,7 @@ export function SVGAnimate() {
             easing: 'easeInOutSine',
             duration: Duration
         }, Offset
-    )
+    );
 
     tl.add(
         {
@@ -87,7 +92,7 @@ export function SVGAnimate() {
             easing: 'easeInOutSine',
             duration: Duration
         }, Offset
-    )
+    );
 
     tl.add(
         {
@@ -98,7 +103,7 @@ export function SVGAnimate() {
             easing: 'easeInOutSine',
             duration: Duration
         }, Offset
-    )
+    );
 
     tl.add(
         {
@@ -109,7 +114,7 @@ export function SVGAnimate() {
             easing: 'easeInOutSine',
             duration: Duration
         }, Offset
-    )
+    );
 
     tl.add(
         {
@@ -120,23 +125,32 @@ export function SVGAnimate() {
             easing: 'easeInOutSine',
             duration: Duration
         }, Offset
-    )
+    );
 
     tl.add(
         {
             targets: ".svg-text#snowball",
             rotateX: [Rotation, 0],
             easing: 'easeInOutQuad',
-            duration: 700,
+            duration: 600,
         }
-    )
+    );
 
     tl.add(
         {
             targets: ".svg-text#sh",
             rotateX: [Rotation, 0],
             easing: 'easeInOutQuad',
-            duration: 700,
+            duration: 600,
         }
-    )
+    );
+
+    tl.add(
+        {
+            targets: ".what-i-do",
+            opacity: [0, 1],
+            easing: 'easeInOutQuad',
+            duration: 500,
+        }, Offset + Duration + 800
+    );
 }

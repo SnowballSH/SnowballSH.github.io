@@ -10,7 +10,6 @@ export class App extends Component<any, any> {
         return (
             <Fragment>
                 <SHCont/>
-                <p>SnowballSH</p>
             </Fragment>
         );
     }

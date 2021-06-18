@@ -38,6 +38,7 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400&display=swap');
 
 .svg-text {
   position: absolute;
@@ -55,4 +56,11 @@
     left: 6em;
     font-size: 3.5em;
   }
+}
+
+.what-i-do {
+  font-family: 'Noto Sans JP', sans-serif;
+  transform: translateY(-5vw);
+  font-size: calc(1vw + 10px);
+  font-weight: 300;
 }
