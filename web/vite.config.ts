@@ -9,7 +9,7 @@ export default defineConfig({
     jsxFragment: 'Fragment',
   },
   build: {
-    outDir: "docs",
+    outDir: "../docs/",
   },
   plugins: [prefresh()]
 })
