@@ -1,9 +1,14 @@
 @import "styles/svg";
+@import "styles/grid";
+
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400&display=swap');
 
 html,
 body {
   padding: 0;
   margin: 0;
+  height: 100%;
 }
 
 * {
@@ -12,4 +17,5 @@ body {
 
 #app {
   text-align: center;
+  height: 100%;
 }

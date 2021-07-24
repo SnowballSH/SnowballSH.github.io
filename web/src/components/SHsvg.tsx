@@ -19,7 +19,7 @@ export function SH() {
 
 export function SHCont() {
     return (
-        <div>
+        <div class={"svg-outer"}>
             <div class={"svg-container"}>
                 <SH/>
                 <SH/>

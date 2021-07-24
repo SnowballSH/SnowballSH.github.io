@@ -37,9 +37,6 @@
   left: calc(50% - 12em);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400&display=swap');
-
 .svg-text {
   position: absolute;
   font-family: 'Rock Salt', cursive;
@@ -60,7 +57,17 @@
 
 .what-i-do {
   font-family: 'Noto Sans JP', sans-serif;
-  transform: translateY(-5vw);
+  transform: translateY(-3vw);
   font-size: calc(1vw + 10px);
   font-weight: 300;
+}
+
+.svg-outer {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-evenly;
+  margin-bottom: calc(16vw + 10px);
 }
