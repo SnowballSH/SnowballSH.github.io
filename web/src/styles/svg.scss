@@ -4,6 +4,7 @@
   position: relative;
   height: 14em;
   transform: translateY(0em) rotateX(10deg);
+  margin-top: 1vw;
 
   :nth-child(6) {
     opacity: 0.05;
@@ -57,7 +58,7 @@
 
 .what-i-do {
   font-family: 'Noto Sans JP', sans-serif;
-  transform: translateY(-3vw);
+  transform: translateY(-1vw);
   font-size: calc(1vw + 10px);
   font-weight: 300;
 }
