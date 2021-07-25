@@ -37,17 +37,6 @@ export function Projects() {
 
                     <h4>Toolbox website for visualizing everything.</h4>
 
-                    <h3>
-                        Features:
-                    </h3>
-                    <h4>
-                        Data Visualization
-                        <br/>
-                        Sorting Visualization
-                        <br/>
-                        Minimax Visualization
-                    </h4>
-
                     <h4><a href={"https://github.com/SnowballSH/Figurify"} target={"_blank"}>Github</a>
                         <br/>
                         <a href={"https://figurify.vercel.app"} target={"_blank"}>Website</a></h4>
@@ -98,8 +87,8 @@ export function Projects() {
                         including Code Compiler, Code Shortener, Stack Overflow searcher, Regex Templates, Ascii Table,
                         etc.
                     </h4>
-                    <h4>I know most of the tools sound stupid, they are, but this is my first successful project
-                        <b>collaborating with other guys</b>.</h4>
+                    <h4>I know most of the tools sound stupid, they are, but this is my first successful project <b>collaborating
+                        with other guys</b>.</h4>
                     <h4><a href={"https://github.com/TWT-Code-Jam-FAST/Probox"} target={"_blank"}>Github</a>
                         <br/>
                         <a href={"https://probox.vercel.app"} target={"_blank"}>Website</a></h4>
