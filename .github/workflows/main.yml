@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.4.0
+      
+      - name: Install Dependencies
+        run: |
+          npm install --global yarn
+          cd web
+          yarn build
+          cd ..
+          
+
+      - name: GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v2.5.0
+        with:
+          # Build directory to deploy
+          build_dir: docs
+          # Write the given domain name to the CNAME file
+          fqdn: snowballsh.me
