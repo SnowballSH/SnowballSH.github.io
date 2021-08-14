@@ -33,6 +33,10 @@ $w: 20em;
   }
 
   img {
+    --margin: 0;
+
+    margin: var(--margin);
+
     transition: all 0.1s linear;
   }
 
@@ -46,7 +50,7 @@ $w: 20em;
       padding-bottom: 45px;
 
       img {
-        margin: 6px;
+        margin: calc(var(--margin) + 6px);
       }
     }
 
@@ -75,7 +79,7 @@ $w: 20em;
       width: calc(15vw + 200px);
       height: auto;
       object-fit: contain;
-      margin: -20px;
+      --margin: -20px;
     }
   }
 
