@@ -23,6 +23,11 @@ jobs:
           npm install --global yarn
           cd web
           yarn
+          cd ..
+      
+      - name: Build
+        run: |
+          cd web
           yarn build
           cd ..
           
@@ -34,3 +39,5 @@ jobs:
           build_dir: docs
           # Write the given domain name to the CNAME file
           fqdn: snowballsh.me
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
