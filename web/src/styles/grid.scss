@@ -10,6 +10,7 @@ $w: 20em;
 
 .grid-out {
   --margin-div: 40px;
+
   --fifty-percent: calc(50% - calc(2 * var(--margin-div)));
 
   display: flex;
@@ -40,18 +41,18 @@ $w: 20em;
     transition: all 0.1s linear;
   }
 
-  div {
+  section {
+    border-radius: 6px;
+    position: relative;
     padding: 40px;
-
-    border-radius: 8px;
+    width: $w;
 
     &:hover {
-      padding-top: 45px;
-      padding-bottom: 45px;
-
       img {
         margin: calc(var(--margin) + 6px);
       }
+
+      font-size: 1.03em;
     }
 
     box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
@@ -69,8 +70,48 @@ $w: 20em;
     text-decoration: none;
   }
 
+  .language {
+    flex: 1 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    display: flex;
+    padding: 0;
+    box-shadow: none;
+
+    .gorilla {
+      background-color: #4876cb;
+      color: white;
+
+      border-radius: 6px 6px 0 0;
+
+      img {
+        width: calc(15vw + 200px);
+        height: auto;
+        object-fit: contain;
+        --margin: -20px;
+      }
+    }
+
+    .glacier {
+      border-radius: 0 0 6px 6px;
+
+      background-color: #3bab6d;
+      color: white;
+      padding-top: 200px;
+    }
+
+    section {
+      flex: 1 100%;
+      transition: none;
+
+      &:hover {
+        font-size: inherit;
+      }
+    }
+  }
+
   .gorilla {
-    width: $w;
     flex: 1 100%;
     background-color: #4876cb;
     color: white;
@@ -83,8 +124,14 @@ $w: 20em;
     }
   }
 
+  .glacier {
+    flex: 1 100%;
+    background-color: #3bab6d;
+    color: white;
+  }
+
+
   .figurify {
-    width: $w;
     flex: 1 100%;
     background-color: #9c74e3;
     color: white;
@@ -97,28 +144,24 @@ $w: 20em;
   }
 
   .iceburn {
-    width: $w;
     flex: 1 var(--fifty-percent);
     background-color: #68a7d9;
     color: white;
   }
 
-  .glacier {
-    width: $w;
+  .rustfish {
     flex: 1 var(--fifty-percent);
-    background-color: #3bab6d;
+    background-color: #68d995;
     color: white;
   }
 
   .probox {
-    width: $w;
     flex: 1 var(--fifty-percent);
     background-color: #ab4c3b;
     color: white;
   }
 
   .mini {
-    width: $w;
     flex: 1 var(--fifty-percent);
     background-color: #733bab;
     color: white;

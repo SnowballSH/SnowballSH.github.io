@@ -1,4 +1,4 @@
-import "../index.scss";
+import "../styles/svg.scss";
 import {h} from "preact";
 import anime from "animejs";
 

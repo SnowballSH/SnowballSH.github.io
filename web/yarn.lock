@@ -201,6 +201,18 @@
     "@babel/helper-validator-identifier" "^7.14.5"
     to-fast-properties "^2.0.0"
 
+"@improv/preact-responsive@^0.10.1":
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/@improv/preact-responsive/-/preact-responsive-0.10.1.tgz#edaee293020a340e599e27686c6409ba055554f8"
+  integrity sha512-gxRzOtQ5Zdl9b2at3K5g2WKkLcezBYxpH1JhtMLvz6Jccz1EntFdQrtVebC5d2F5g2zzblSihINaxgyq4meSDw==
+  dependencies:
+    "@improv/responsive" "^0.10.1"
+
+"@improv/responsive@^0.10.1":
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/@improv/responsive/-/responsive-0.10.1.tgz#375c5a251c460a8f063de2627af8c9d5f5cc2e9c"
+  integrity sha512-X/7iFuzFIip1735RZYrUB9mDA4eAWywgaRHUNL/yPaRnxJsTkq1nWRPNCApTDDXwix6WAifBXtLHe4cxciMSLw==
+
 "@preact/preset-vite@^2.0.0":
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/@preact/preset-vite/-/preset-vite-2.1.0.tgz#66934767ca0b49c1ea1cc00e82d3d43f2caba7d1"
