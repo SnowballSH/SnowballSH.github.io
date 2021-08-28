@@ -2,6 +2,8 @@ import "../styles/waves.scss";
 import "../styles/grid.scss";
 import {Fragment, h} from "preact";
 
+import FigurifyPNG from "../figurify.png";
+
 function get_languages(mobile: boolean) {
     return <Fragment>
         <section class={"gorilla"}>
@@ -12,7 +14,8 @@ function get_languages(mobile: boolean) {
             <h4>
                 A <b>dynamic, interpreted programming language</b> focusing on simplicity and speed.
                 <br/>
-                Although <a href={"https://github.com/SnowballSH/Gorilla#news"} target={"_blank"}>archived and
+                Although <a href={"https://github.com/SnowballSH/Gorilla#news"} target={"_blank"} rel="noopener">archived
+                and
                 unfinished</a>,
                 Gorilla is my greatest project.
             </h4>
@@ -23,7 +26,7 @@ function get_languages(mobile: boolean) {
                 this project, and it is better than I expected! It is also very cool!
             </h4>
 
-            <h4><a href={"https://github.com/SnowballSH/Gorilla"} target={"_blank"}>Github</a></h4>
+            <h4><a href={"https://github.com/SnowballSH/Gorilla"} target={"_blank"} rel="noopener">Github</a></h4>
         </section>
 
         <section class={"glacier"}>
@@ -56,7 +59,7 @@ function get_languages(mobile: boolean) {
                 The concept is complete, now I only need to port all instructions back to the Glacier
                 format.
             </h4>
-            <h4><a href={"https://github.com/SnowballSH/RustGlacier"} target={"_blank"}>Github</a></h4>
+            <h4><a href={"https://github.com/SnowballSH/RustGlacier"} target={"_blank"} rel="noopener">Github</a></h4>
         </section>
     </Fragment>;
 }
@@ -64,7 +67,7 @@ function get_languages(mobile: boolean) {
 
 export function Projects() {
     return (
-        <div>
+        <div class={"projects"}>
             <h1 class={"project-head"}>Projects</h1>
             <div class={"grid-out"}>
                 {
@@ -78,13 +81,14 @@ export function Projects() {
                     <h2>
                         Figurify the algorithms, right in your browser!
                     </h2>
-                    <img src={"https://github.com/SnowballSH/Figurify/raw/master/public/figurify_final.png"} alt={""}/>
+                    <img src={FigurifyPNG} alt={""}/>
 
                     <h4>Toolbox website for visualizing everything.</h4>
 
-                    <h4><a href={"https://github.com/SnowballSH/Figurify"} target={"_blank"}>Github</a>
+                    <h4><a href={"https://github.com/SnowballSH/Figurify"} target={"_blank"} rel="noopener">Github</a>
                         <br/>
-                        <a href={"https://figurify.vercel.app"} target={"_blank"}>Website</a></h4>
+                        <br/>
+                        <a href={"https://figurify.vercel.app"} target={"_blank"} rel="noopener">Website</a></h4>
                 </section>
 
                 <section class={"iceburn"}>
@@ -97,11 +101,13 @@ export function Projects() {
                         technique, but with the <b>NNUE evaluation and MTD(f) search</b>, it plays at ~500knps with an
                         ELO
                         of <a
-                        href={"https://lichess.org/@/IceBurnEngine"} target={"_blank"}>~1600 Blitz and ~1700 Rapid</a>.
+                        href={"https://lichess.org/@/IceBurnEngine"} target={"_blank"} rel="noopener">~1600 Blitz and
+                        ~1700 Rapid</a>.
                         This project is
                         for fun and is not a focus on engine performance :)
                     </h4>
-                    <h4><a href={"https://github.com/SnowballSH/iceburn"} target={"_blank"}>Github</a></h4>
+                    <h4><a href={"https://github.com/SnowballSH/iceburn"} target={"_blank"} rel="noopener">Github</a>
+                    </h4>
                 </section>
 
                 <section class={"rustfish"}>
@@ -111,7 +117,8 @@ export function Projects() {
                     <h4>
                         Rustfish is the Rust port of the Stockfish Chess Engine (which is written in C++).
                         <br/>
-                        The project is continued from <a href={"https://github.com/syzygy1/Rustfish"} target={"_blank"}>Sygyzy's
+                        The project is continued from <a href={"https://github.com/syzygy1/Rustfish"} target={"_blank"}
+                                                         rel="noopener">Sygyzy's
                         Rustfish</a>, but since that repo is in silence for a while, I decided to update it toward
                         Stockfish 14.
                     </h4>
@@ -119,7 +126,8 @@ export function Projects() {
                         It is currently closing toward the release of Stockfish 10, with a strength and speed similar to
                         Stockfish 10.
                     </h4>
-                    <h4><a href={"https://github.com/SnowballSH/Rustfish"} target={"_blank"}>Github</a></h4>
+                    <h4><a href={"https://github.com/SnowballSH/Rustfish"} target={"_blank"} rel="noopener">Github</a>
+                    </h4>
                 </section>
 
                 <section class={"probox"}>
@@ -136,9 +144,11 @@ export function Projects() {
                     </h4>
                     <h4>I know most of the tools sound stupid, they are, but this is my first successful project <b>collaborating
                         with other guys</b>.</h4>
-                    <h4><a href={"https://github.com/TWT-Code-Jam-FAST/Probox"} target={"_blank"}>Github</a>
+                    <h4><a href={"https://github.com/TWT-Code-Jam-FAST/Probox"} target={"_blank"}
+                           rel="noopener">Github</a>
                         <br/>
-                        <a href={"https://probox.vercel.app"} target={"_blank"}>Website</a></h4>
+                        <br/>
+                        <a href={"https://probox.vercel.app"} target={"_blank"} rel="noopener">Website</a></h4>
                 </section>
 
                 <section class={"mini"}>
@@ -154,9 +164,12 @@ export function Projects() {
                     <h4>I also made <b>a strong engine</b> that can play the game with you. It also has 3 levels with
                         different
                         search times.</h4>
-                    <h4><a href={"https://github.com/SnowballSH/minimal-chess"} target={"_blank"}>Github</a>
+                    <h4><a href={"https://github.com/SnowballSH/minimal-chess"} target={"_blank"}
+                           rel="noopener">Github</a>
                         <br/>
-                        <a href={"https://snowballsh.me/minimal-chess"} target={"_blank"}>Website</a></h4>
+                        <br/>
+                        <a href={"https://snowballsh.me/minimal-chess"} target={"_blank"} rel="noopener">Website</a>
+                    </h4>
                 </section>
             </div>
         </div>

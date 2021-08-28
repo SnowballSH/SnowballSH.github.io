@@ -1,4 +1,40 @@
 .about {
-  margin-bottom: calc(16vw + 10px);
+  position: relative;
+  margin-top: calc(16vw + 10px);
+  padding-bottom: calc(16vw + 10px);
   text-align: center;
+}
+
+.about-head {
+  font-family: 'Noto Sans JP', sans-serif;
+  position: absolute;
+  transform: translate(calc(5vw + 10px), calc(-16vw - 34px));
+  z-index: 1;
+  font-size: calc(10vw + 10px);
+  color: #0e0e0e;
+}
+
+.me {
+  margin: 0 calc(4vw + 8px);
+  background: #e8effc;
+  border-radius: 10px;
+  padding: 50px;
+  color: #624ce0;
+  font-family: 'Noto Sans JP', sans-serif;
+
+  img {
+    width: calc(120px + 6vw);
+    aspect-ratio: 1;
+
+    transition: all 0.2s ease-in-out;
+
+    animation: roll;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+  }
+
+  a {
+    color: #049372;
+    text-decoration: none;
+  }
 }

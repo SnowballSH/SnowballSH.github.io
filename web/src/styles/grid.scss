@@ -1,11 +1,16 @@
 $w: 20em;
 
+.projects {
+  position: relative;
+}
+
 .project-head {
   font-family: 'Noto Sans JP', sans-serif;
   position: absolute;
-  transform: translate(calc(3vw + 10px), calc(-21vw - 40px));
+  transform: translate(calc(4vw + 10px), calc(-21vw - 40px));
   z-index: 1;
   font-size: calc(10vw + 10px);
+  color: #0e0e0e;
 }
 
 .grid-out {
@@ -38,11 +43,15 @@ $w: 20em;
 
     margin: var(--margin);
 
-    transition: all 0.1s linear;
+    animation: roll-small;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
   }
 
   section {
-    border-radius: 6px;
+    color: whitesmoke;
+
+    border-radius: 10px;
     position: relative;
     padding: 40px;
     width: $w;
@@ -62,7 +71,7 @@ $w: 20em;
     0 41.8px 33.4px rgba(0, 0, 0, 0.05),
     0 100px 80px rgba(0, 0, 0, 0.07);
 
-    transition: all 0.1s linear;
+    transition: all 0.1s ease-in-out;
   }
 
   a {
@@ -81,9 +90,8 @@ $w: 20em;
 
     .gorilla {
       background-color: #4876cb;
-      color: white;
 
-      border-radius: 6px 6px 0 0;
+      border-radius: 10px 10px 0 0;
 
       img {
         width: calc(15vw + 200px);
@@ -94,10 +102,9 @@ $w: 20em;
     }
 
     .glacier {
-      border-radius: 0 0 6px 6px;
+      border-radius: 0 0 10px 10px;
 
       background-color: #3bab6d;
-      color: white;
       padding-top: 200px;
     }
 
@@ -113,8 +120,7 @@ $w: 20em;
 
   .gorilla {
     flex: 1 100%;
-    background-color: #4876cb;
-    color: white;
+    background-color: #5a88de;
 
     img {
       width: calc(15vw + 200px);
@@ -127,14 +133,12 @@ $w: 20em;
   .glacier {
     flex: 1 100%;
     background-color: #3bab6d;
-    color: white;
   }
 
 
   .figurify {
     flex: 1 100%;
     background-color: #9c74e3;
-    color: white;
 
     img {
       width: calc(10vw + 100px);
@@ -146,24 +150,20 @@ $w: 20em;
   .iceburn {
     flex: 1 var(--fifty-percent);
     background-color: #68a7d9;
-    color: white;
   }
 
   .rustfish {
     flex: 1 var(--fifty-percent);
     background-color: #68d995;
-    color: white;
   }
 
   .probox {
     flex: 1 var(--fifty-percent);
     background-color: #ab4c3b;
-    color: white;
   }
 
   .mini {
     flex: 1 var(--fifty-percent);
     background-color: #733bab;
-    color: white;
   }
 }
