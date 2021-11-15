@@ -9,7 +9,7 @@ export function About() {
             <h1 class={"about-head"}>About</h1>
             <div class={"me"}>
                 <h2>
-                    Hey! I am SnowballSH, a software developer in love with Algorithms and AI/ML.
+                    Hey! I am SnowballSH, a software developer in love with board game algorithms and parsing.
                 </h2>
                 <img src={SBSH_IMG} alt={""}/>
                 <h2>
@@ -27,6 +27,9 @@ export function About() {
                 <h2>
                     I post 99% of my projects on my Github! <a href={"https://github.com/SnowballSH"} target={"_blank"}
                                                                rel="noopener">github.com/SnowballSH</a>
+                </h2>
+                <h2>
+                    Highest Google Kickstart score: 44
                 </h2>
             </div>
         </div>

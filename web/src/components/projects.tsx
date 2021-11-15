@@ -99,7 +99,7 @@ export function Projects() {
                         Iceburn is a simple chess engine written Rust. It uses negamax with various pruning and move ordering techniques. It also uses MTD(f) iterative deepening search.
                         <br />
                         Development of v2 currently plays at <a
-                            href={"https://lichess.org/@/IceBurnEngine"} target={"_blank"} rel="noopener">1800 bullet and 1700 Blitz</a> on lichess.
+                            href={"https://lichess.org/@/IceBurnEngine"} target={"_blank"} rel="noopener">about 2000 ELO</a> on lichess.
                     </h4>
                     <h4><a href={"https://github.com/SnowballSH/iceburn"} target={"_blank"} rel="noopener">Github</a>
                     </h4>
