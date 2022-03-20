@@ -29,7 +29,10 @@ export function About() {
                                                                rel="noopener">github.com/SnowballSH</a>
                 </h2>
                 <h2>
-                    Highest Google Kickstart score: 44
+                    Google Kickstart record: defeated 85.13% of all participants, 58 points
+                </h2>
+                <h2>
+                    USACO: Silver
                 </h2>
             </div>
         </div>
