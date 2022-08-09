@@ -51,13 +51,10 @@ function get_languages(mobile: boolean) {
                 The Glacier Programming Language
             </h2>
             <h4>
-                Continued from Gorilla, Glacier utilizes <b>stack + heap</b> technique, by allocating objects in
-                heap,
-                it largely <b>increases speed and memory efficiency</b> compared to Gorilla.
+                As successor to the Gorilla language, Glacier2 uses a more efficient memory management and VM system.
             </h4>
             <h4>
-                The concept is complete, now I only need to port all instructions back to the Glacier
-                format.
+                It is currently in development. Beta version is expected to come out in late 2022.
             </h4>
             <h4><a href={"https://github.com/SnowballSH/RustGlacier"} target={"_blank"} rel="noopener">Github</a></h4>
         </section>
@@ -70,6 +67,32 @@ export function Projects() {
         <div class={"projects"}>
             <h1 class={"project-head"}>Projects</h1>
             <div class={"grid-out"}>
+                <section class={"avalanche"}>
+                    <h2>
+                        The Avalanche Chess Engine
+                    </h2>
+                    <h4>
+                        Avalanche is the first ever and the strongest chess engine (computer chess player) written in the Zig Programming Language.
+                        <br />
+                        It implements the UCI protocol and plays in <a href="http://ccrl.chessdom.com/ccrl/4040/" target="_blank" rel="noopener">CCRL 40/15</a> tournaments
+                    </h4>
+                    <h4>
+                        <b>Strength</b>
+                        <br />The latest Avalanche 1.1.0 has a CCRL ELO of about <b>2850</b>.
+                        <br />It is capable of defeating any human player consistently and is about the 120th strongest chess program in history.
+                        <br />FIDE Master players have challenged it but none defeated or drew Avalanche.
+                        <br />
+                        <br />
+                        <b>Accuracy</b>
+                        <br />Avalanche uses the <b>NNUE</b> technology on a <b>alpha-beta minimax</b> framework. It can detect most tactics while also being accurate in quiet positions.
+                        <br />
+                        <br />
+                        <b>Speed</b>
+                        <br />Avalanche has one of the fastest move generation in the world due to the optimizations of Zig and LLVM.
+                    </h4>
+                    <h4><a href="https://github.com/SnowballSH/Avalanche" target="_blank" rel="noopener">Github</a></h4>
+                </section>
+
                 {
                     window.innerWidth > 500 ?
                         <section class={"language"}>
@@ -91,40 +114,6 @@ export function Projects() {
                         <a href={"https://figurify.vercel.app"} target={"_blank"} rel="noopener">Website</a></h4>
                 </section>
 
-                <section class={"iceburn"}>
-                    <h2>
-                        The Iceburn Chess Engine
-                    </h2>
-                    <h4>
-                        Iceburn is a simple chess engine written Rust. It uses negamax with various pruning and move ordering techniques. It also uses MTD(f) iterative deepening search.
-                        <br />
-                        Development of v2 currently plays at <a
-                            href={"https://lichess.org/@/IceBurnEngine"} target={"_blank"} rel="noopener">about 1900 ELO</a> on lichess.
-                    </h4>
-                    <h4><a href={"https://github.com/SnowballSH/iceburn"} target={"_blank"} rel="noopener">Github</a>
-                    </h4>
-                </section>
-
-                <section class={"rustfish"}>
-                    <h2>
-                        The Rustfish Chess Engine
-                    </h2>
-                    <h4>
-                        Rustfish is the Rust port of the Stockfish Chess Engine (which is written in C++).
-                        <br />
-                        The project is continued from <a href={"https://github.com/syzygy1/Rustfish"} target={"_blank"}
-                            rel="noopener">Sygyzy's
-                            Rustfish</a>, but since that repo is in silence for a while, I decided to update it toward
-                        Stockfish 14.
-                    </h4>
-                    <h4>
-                        It is currently closing toward the release of Stockfish 10, with a strength and speed similar to
-                        Stockfish 10.
-                    </h4>
-                    <h4><a href={"https://github.com/SnowballSH/Rustfish"} target={"_blank"} rel="noopener">Github</a>
-                    </h4>
-                </section>
-
                 <section class={"probox"}>
                     <h2>
                         Probox, the toolbox for Programmers
@@ -137,8 +126,7 @@ export function Projects() {
                         including Code Compiler, Code Shortener, Stack Overflow searcher, Regex Templates, Ascii Table,
                         etc.
                     </h4>
-                    <h4>I know most of the tools sound stupid, they are, but this is my first successful project <b>collaborating
-                        with other guys</b>.</h4>
+                    <h4>The tools may sound trivial, but this was my first collaboration project ever.</h4>
                     <h4><a href={"https://github.com/TWT-Code-Jam-FAST/Probox"} target={"_blank"}
                         rel="noopener">Github</a>
                         <br />
@@ -146,27 +134,19 @@ export function Projects() {
                         <a href={"https://probox.vercel.app"} target={"_blank"} rel="noopener">Website</a></h4>
                 </section>
 
-                <section class={"mini"}>
+                <section class={"goneuraou"}>
                     <h2>
-                        Minimal Chess
+                        GoneuraOu, an (incompleted) MiniShogi Engine
                     </h2>
                     <h4>
-                        Minimal Chess is a new chess-like board game created and developed by me. It is inspired by a
-                        Chinese show.
+                        GoneuraOu is a MiniShogi Engine written in C# using Minimax search and distance-eval evaluation.
                     </h4>
-                    <h4>The game supports piece types for everyone: Traditional Chinese symbols or Universal Chess
-                        pieces</h4>
-                    <h4>I also made <b>a strong engine</b> that can play the game with you. It also has 3 levels with
-                        different
-                        search times.</h4>
-                    <h4><a href={"https://github.com/SnowballSH/minimal-chess"} target={"_blank"}
-                        rel="noopener">Github</a>
-                        <br />
-                        <br />
-                        <a href={"https://snowballsh.me/minimal-chess"} target={"_blank"} rel="noopener">Website</a>
-                    </h4>
+                    <h4>Development is stopped at 2150 ELO, when I switched to focus on Chess Engine instead.</h4>
+                    <h4>It is strong enough to defeat amateur human players easily.</h4>
+                    <h4><a href={"https://github.com/SnowballSH/GoneuraOu"} target={"_blank"}
+                        rel="noopener">Github</a></h4>
                 </section>
             </div>
-        </div>
+        </div >
     );
 }

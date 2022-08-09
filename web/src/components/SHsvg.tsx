@@ -1,5 +1,5 @@
 import "../styles/svg.scss";
-import {h} from "preact";
+import { h } from "preact";
 import anime from "animejs";
 
 const SHPATH = `
@@ -9,10 +9,10 @@ m40 21c-17-7-6-22 5-14m-5 14c15 7-2 25-10 10m25-25v30m16-30v30m-16-16h16m-55 1c-
 export function SH() {
     return (
         <svg viewBox="0 0 80 40" class={"svg-single"}
-             width={"24em"} height={"12em"}
-             xmlns="http://www.w3.org/2000/svg"
-             stroke-width={0.3}>
-            <path stroke="hsl(197, 100%, 50%)" fill="transparent" d={SHPATH}/>
+            width={"24em"} height={"12em"}
+            xmlns="http://www.w3.org/2000/svg"
+            stroke-width={0.3}>
+            <path stroke="hsl(197, 100%, 50%)" fill="transparent" d={SHPATH} />
         </svg>
     );
 }
@@ -21,12 +21,12 @@ export function SHCont() {
     return (
         <div class={"svg-outer"}>
             <div class={"svg-container"}>
-                <SH/>
-                <SH/>
-                <SH/>
-                <SH/>
-                <SH/>
-                <SH/>
+                <SH />
+                <SH />
+                <SH />
+                <SH />
+                <SH />
+                <SH />
                 <h1 class="svg-text" id="snowball">
                     Snowball
                 </h1>

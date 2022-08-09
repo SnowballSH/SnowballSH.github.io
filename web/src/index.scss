@@ -19,24 +19,36 @@ body {
 }
 
 @keyframes roll {
-  0%, 20%, 80%, 100% {
+
+  0%,
+  20%,
+  80%,
+  100% {
     transform: none;
   }
+
   35% {
     transform: translateX(25vw) rotateZ(180deg);
   }
+
   65% {
     transform: translateX(-25vw) rotateZ(-180deg);
   }
 }
 
 @keyframes roll-small {
-  0%, 20%, 80%, 100% {
+
+  0%,
+  20%,
+  80%,
+  100% {
     transform: none;
   }
+
   35% {
     transform: translateX(6vw) rotateZ(25deg);
   }
+
   65% {
     transform: translateX(-6vw) rotateZ(-25deg);
   }

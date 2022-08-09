@@ -1,7 +1,7 @@
-import {SHCont, SVGAnimate} from "./components/SHsvg";
-import {Component, Fragment, h} from "preact";
-import {Projects} from "./components/projects";
-import {About} from "./components/about";
+import { SHCont, SVGAnimate } from "./components/SHsvg";
+import { Component, Fragment, h } from "preact";
+import { Projects } from "./components/projects";
+import { About } from "./components/about";
 
 export class App extends Component<any, any> {
     componentDidMount() {
@@ -11,9 +11,9 @@ export class App extends Component<any, any> {
     render() {
         return (
             <Fragment>
-                <SHCont/>
-                <About/>
-                <Projects/>
+                <SHCont />
+                <About />
+                <Projects />
             </Fragment>
         );
     }
