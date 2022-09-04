@@ -17,7 +17,6 @@ function get_languages(mobile: boolean) {
                 Although <a href={"https://github.com/SnowballSH/Gorilla#news"} target={"_blank"} rel="noopener">archived
                     and
                     unfinished</a>,
-                Gorilla is my greatest project.
             </h4>
             <h4>
                 From learning to make a parser, to interpreters, to compilations, to VM,
@@ -78,9 +77,9 @@ export function Projects() {
                     </h4>
                     <h4>
                         <b>Strength</b>
-                        <br />The latest Avalanche 1.1.0 has a CCRL ELO of about <b>2850</b>.
-                        <br />It is capable of defeating any human player consistently and is about the 120th strongest chess program in history.
-                        <br />FIDE Master players have challenged it but none defeated or drew Avalanche.
+                        <br />The latest Avalanche 1.2.0 has a CCRL ELO of about <b>2950</b>.
+                        <br />It is capable of defeating any human player consistently and is about the 105th strongest chess program in history.
+                        <br />FIDE Master players have challenged it but all of them lost.
                         <br />
                         <br />
                         <b>Accuracy</b>
