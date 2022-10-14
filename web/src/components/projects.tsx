@@ -22,7 +22,7 @@ function get_languages(mobile: boolean) {
                 From learning to make a parser, to interpreters, to compilations, to VM,
                 <br />
                 I learned a lot from
-                this project, and it is better than I expected! It is also very cool!
+                this project!
             </h4>
 
             <h4><a href={"https://github.com/SnowballSH/Gorilla"} target={"_blank"} rel="noopener">Github</a></h4>
@@ -77,8 +77,8 @@ export function Projects() {
                     </h4>
                     <h4>
                         <b>Strength</b>
-                        <br />The latest Avalanche 1.2.0 has a CCRL ELO of about <b>2950</b>.
-                        <br />It is capable of defeating any human player consistently and is about the 105th strongest chess program in history.
+                        <br />The latest <a href="http://ccrl.chessdom.com/ccrl/4040/cgi/engine_details.cgi?print=Details&each_game=1&eng=Avalanche%201.2.0%2064-bit#Avalanche_1_2_0_64-bit" target="_blank" rel="noopener">Avalanche 1.2.0</a> has a CCRL ELO of <b>3042</b>.
+                        <br />It is capable of defeating any human player consistently and is about the 86th strongest chess program in history.
                         <br />FIDE Master players have challenged it but all of them lost.
                         <br />
                         <br />
