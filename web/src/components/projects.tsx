@@ -53,7 +53,7 @@ function get_languages(mobile: boolean) {
                 As successor to the Gorilla language, Glacier2 uses a more efficient memory management and VM system.
             </h4>
             <h4>
-                It is currently in development. Beta version is expected to come out in late 2022.
+                The development is currently paused indefinitely due to school work.
             </h4>
             <h4><a href={"https://github.com/SnowballSH/RustGlacier"} target={"_blank"} rel="noopener">Github</a></h4>
         </section>
@@ -77,13 +77,13 @@ export function Projects() {
                     </h4>
                     <h4>
                         <b>Strength</b>
-                        <br />The latest <a href="http://ccrl.chessdom.com/ccrl/4040/cgi/engine_details.cgi?print=Details&each_game=1&eng=Avalanche%201.2.0%2064-bit#Avalanche_1_2_0_64-bit" target="_blank" rel="noopener">Avalanche 1.2.0</a> has a CCRL ELO of <b>3042</b>.
-                        <br />It is capable of defeating any human player consistently and is about the 86th strongest chess program in history.
-                        <br />FIDE Master players have challenged it but all of them lost.
+                        <br />The latest <a href="http://ccrl.chessdom.com/ccrl/4040/cgi/engine_details.cgi?print=Details&each_game=0&eng=Avalanche%201.4.0%2064-bit#Avalanche_1_4_0_64-bit" target="_blank" rel="noopener">Avalanche 1.4.0</a> has a CCRL ELO of <b>3148</b>.
+                        <br />It is capable of defeating any human player consistently and is the world's 45th strongest open-source chess engine
+                        <br />It has won all games versus human FIDE Master challengers.
                         <br />
                         <br />
                         <b>Accuracy</b>
-                        <br />Avalanche uses the <b>NNUE</b> technology on a <b>alpha-beta minimax</b> framework. It can detect most tactics while also being accurate in quiet positions.
+                        <br />Avalanche uses the <b>NNUE</b> technology on a <b>alpha-beta minimax</b> framework. The 512-hidden-neuron Neural Network allows precise evaluations of positions and their future advantages, much better than traditional hand-written evaluations. The minimax search is equipped with advanced prunings, heuristics, and reduction techniques, allowing for a faster and more accurate deep search. It can detect most tactics while also being accurate in quiet positions.
                         <br />
                         <br />
                         <b>Speed</b>
@@ -112,8 +112,22 @@ export function Projects() {
                         <br />
                         <a href={"https://figurify.vercel.app"} target={"_blank"} rel="noopener">Website</a></h4>
                 </section>
-
+                
                 <section class={"probox"}>
+                    <h2>
+                        Experience ML: Visualize the training process of classification neural networks right in your browser.
+                    </h2>
+
+                    <h4>Experience ML trains and runs a custom neural network purely in the browser. The speed is made possible by compiling Rust to WebAssembly. The neural network training code and gradient descent are written completely standalone in Rust, without any external libraries, allowing a minimum production bundle.</h4>
+
+                    <h4><a href={"https://github.com/SnowballSH/experience_ml"} target={"_blank"} rel="noopener">Github</a>
+                        <br />
+                        <br />
+                        <a href={"https://snowballsh.github.io/experience_ml"} target={"_blank"} rel="noopener">Website (DEMO)</a></h4>
+                </section>
+
+                <!--
+<section class={"probox"}>
                     <h2>
                         Probox, the toolbox for Programmers
                     </h2>
@@ -132,6 +146,7 @@ export function Projects() {
                         <br />
                         <a href={"https://probox.vercel.app"} target={"_blank"} rel="noopener">Website</a></h4>
                 </section>
+-->
 
                 <section class={"goneuraou"}>
                     <h2>
