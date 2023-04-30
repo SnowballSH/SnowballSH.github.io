@@ -126,7 +126,7 @@ export function Projects() {
                         <a href={"https://snowballsh.github.io/experience_ml"} target={"_blank"} rel="noopener">Website (DEMO)</a></h4>
                 </section>
 
-                <!--
+                {/*
 <section class={"probox"}>
                     <h2>
                         Probox, the toolbox for Programmers
@@ -146,7 +146,7 @@ export function Projects() {
                         <br />
                         <a href={"https://probox.vercel.app"} target={"_blank"} rel="noopener">Website</a></h4>
                 </section>
--->
+*/}
 
                 <section class={"goneuraou"}>
                     <h2>
