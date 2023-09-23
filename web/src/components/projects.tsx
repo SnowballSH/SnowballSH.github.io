@@ -77,7 +77,7 @@ export function Projects() {
                     </h4>
                     <h4>
                         <b>Strength</b>
-                        <br />The latest <a href="http://ccrl.chessdom.com/ccrl/4040/cgi/engine_details.cgi?print=Details&each_game=0&eng=Avalanche%201.4.0%2064-bit#Avalanche_1_4_0_64-bit" target="_blank" rel="noopener">Avalanche 1.4.0</a> has a CCRL ELO of <b>3148</b>.
+                        <br />The latest <a href="https://ccrl.chessdom.com/ccrl/4040/cgi/engine_details.cgi?print=Details&each_game=0&eng=Avalanche%201.5.0%2064-bit%204CPU#Avalanche_1_5_0_64-bit_4CPU" target="_blank" rel="noopener">Avalanche 1.5.0</a> has a CCRL ELO of <b>3248</b>.
                         <br />It is capable of defeating any human player consistently and is the world's 45th strongest open-source chess engine
                         <br />It has won all games versus human FIDE Master challengers.
                         <br />
