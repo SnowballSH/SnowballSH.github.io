@@ -73,17 +73,18 @@ export function Projects() {
                     <h4>
                         Avalanche is the first ever and the strongest chess engine (computer chess player) written in the Zig Programming Language.
                         <br />
-                        It implements the UCI protocol and plays in <a href="http://ccrl.chessdom.com/ccrl/4040/" target="_blank" rel="noopener">CCRL 40/15</a> tournaments
+                        It implements the UCI protocol and plays in CCRL and TCEC tournaments
                     </h4>
                     <h4>
                         <b>Strength</b>
-                        <br />The latest <a href="https://ccrl.chessdom.com/ccrl/4040/cgi/engine_details.cgi?print=Details&each_game=0&eng=Avalanche%201.5.0%2064-bit%204CPU#Avalanche_1_5_0_64-bit_4CPU" target="_blank" rel="noopener">Avalanche 1.5.0</a> has a CCRL ELO of <b>3248</b>.
-                        <br />It is capable of defeating any human player consistently and is the world's 45th strongest open-source chess engine
+                        <br />The latest <a href="https://www.computerchess.org.uk/ccrl/404/cgi/engine_details.cgi?print=Details&each_game=1&eng=Avalanche%202.1.0%2064-bit#Avalanche_2_1_0_64-bit" target="_blank" rel="noopener">Avalanche 2.1.0</a> has a CCRL ELO of <b>3398</b>.
+                        <br />Avalanche competed in TCEC, the world's most selective and prestigious competition for computer chess.
+                        <br />It is capable of defeating any human player consistently and is one the world's strongest open-source chess engines
                         <br />It has won all games versus human FIDE Master challengers.
                         <br />
                         <br />
                         <b>Accuracy</b>
-                        <br />Avalanche uses the <b>NNUE</b> technology on a <b>alpha-beta minimax</b> framework. The 512-hidden-neuron Neural Network allows precise evaluations of positions and their future advantages, much better than traditional hand-written evaluations. The minimax search is equipped with advanced prunings, heuristics, and reduction techniques, allowing for a faster and more accurate deep search. It can detect most tactics while also being accurate in quiet positions.
+                        <br />Avalanche uses the <b>NNUE</b> technology on a <b>alpha-beta minimax</b> framework. The Efficiently-Updated Neural Network allows precise evaluations of positions and their future advantages, much better than traditional hand-written evaluations. The minimax search is equipped with advanced prunings, heuristics, and reduction techniques, allowing for a faster and more accurate deep search. It can detect most tactics while also being accurate in quiet positions.
                         <br />
                         <br />
                         <b>Speed</b>
