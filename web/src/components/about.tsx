@@ -29,10 +29,10 @@ export function About() {
                         rel="noopener">github.com/SnowballSH</a>
                 </h2>
                 <h2>
-                    Google Kickstart record: World #647
+                    CALICO Fall '24 Gold Medalist
                 </h2>
                 <h2>
-                    USACO: Silver
+                    USACO Platinum
                 </h2>
             </div>
         </div>
