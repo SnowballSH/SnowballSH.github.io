@@ -14,7 +14,8 @@ const featuredProjects = allProjects
   })
   .slice(0, 4);
 
-const siteUrl = "https://snowballsh.github.io";
+const site = Astro.site ?? new URL("https://snowballsh.github.io");
+const siteUrl = site.toString().replace(/\/$/, "");
 const homeSchema = [
   {
     "@context": "https://schema.org",

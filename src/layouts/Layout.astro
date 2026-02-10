@@ -51,13 +51,22 @@ const schemaItems = schema ? (Array.isArray(schema) ? schema : [schema]) : [];
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/webp" href="/favicon.webp" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
     <meta http-equiv="Cache-Control" content="public, max-age=31536000" />
+    <title>{title}</title>
     <meta name="generator" content={Astro.generator} />
     <meta name="author" content="Yinuo Huang" />
     <meta name="description" content={description} />
     <meta name="keywords" content={keywordContent} />
     <meta name="robots" content={robotsContent} />
     <meta name="theme-color" content="#0f172a" />
+    <link rel="canonical" href={canonicalUrl} />
+    <link
+      rel="sitemap"
+      type="application/xml"
+      href={normalizeUrl("/sitemap-index.xml")}
+    />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content={type} />
@@ -78,19 +87,15 @@ const schemaItems = schema ? (Array.isArray(schema) ? schema : [schema]) : [];
         <meta property="article:modified_time" content={modifiedTime} />
       )
     }
-    <link rel="canonical" href={canonicalUrl} />
-    <link
-      rel="sitemap"
-      type="application/xml"
-      href={normalizeUrl("/sitemap-index.xml")}
-    />
     {
       schemaItems.map((item) => (
-        <script type="application/ld+json" set:html={JSON.stringify(item)} />
+        <script
+          type="application/ld+json"
+          set:html={JSON.stringify(item)}
+          is:inline
+        />
       ))
     }
-
-    <title>{title}</title>
   </head>
   <body
     class="bg-slate-950 font-sans text-slate-50 antialiased selection:bg-cyan-300/30"
