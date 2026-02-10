@@ -17,6 +17,10 @@ export default defineConfig({
       },
       target: (id) => {
         if (/[\\/]src[\\/]content[\\/]blogs[\\/]/.test(id)) {
+          // Render Chinese (.zh.typ) files as HTML to support Chinese fonts
+          if (id.endsWith(".zh.typ")) {
+            return "html";
+          }
           if (id.endsWith(".html.typ") || /[\\/]html[\\/]/.test(id)) {
             return "html";
           }
