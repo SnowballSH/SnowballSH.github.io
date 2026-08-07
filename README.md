@@ -1,15 +1,7 @@
-## SnowballSH (Yinuo Huang) Portfolio v2
+# Deprecated
 
-<img src="./public/favicon.webp" alt="SnowballSH logo" width="96" height="96" />
+This repository is deprecated. The site lives at [snowballsh.com](https://snowballsh.com)
+and its source at [SnowballSH/portfolio](https://github.com/SnowballSH/portfolio).
 
-A modern personal portfolio built with Astro, Tailwind CSS, and Bun.
-
-### Development
-
-- `bun install`
-- `bun run dev`
-- `bun run check`
-- `bun run format`
-- `bun run format:check`
-- `bun run build`
-- `bun run preview`
+The GitHub Pages deployment now serves only a redirect stub for
+`snowballsh.github.io` links.
